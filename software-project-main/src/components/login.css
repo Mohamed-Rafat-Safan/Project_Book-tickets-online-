@@ -1,0 +1,83 @@
+/* .backGroundImg{
+    background-image:url('./saber.jpg');
+} */
+
+.header{
+    display : flex ;
+    align-items: center;
+    height: 90px;
+    background-color: #219f45;
+}
+.header .logo {
+    display : flex;
+    justify-content :center ;
+    width: 15%;
+    font-size:30px;
+    font-weight: 700
+}
+
+.header .links {
+    display : flex;
+    justify-content :flex-end; ;
+    width: 90%;
+    font-size:  ypx;
+
+}
+.img {
+    width:140px ;
+    margin-left: 80px;
+}
+a{
+    margin: 0 30px;
+    color : white;
+    text-decoration : none ;
+    font-size: 16px;
+}
+.inst{
+    text-align: center;
+    margin: 30px 0 ;
+}
+.inst .pOne{
+    font-size:30px;
+    font-weight:600
+}
+.inst .pTwo{
+    color: rgb(56, 56, 56);
+}
+.cont{
+    display :flex;
+    justify-content :center;
+    align-items :center;
+    text-align:center ;
+    background-color: #eee;
+}
+.input{
+    text-align: left;
+}
+.displayBlock{
+    display : block;
+    margin : 15px 0;
+}
+.marginIputs{
+    margin-bottom : 25px  ;
+    height: 40px;
+    width: 450px;
+}
+.colorGreen{
+    color: #219f45;
+}
+.colorGreen:hover{
+    opacity: 1!important;
+}
+.cont .forgot{
+    color: #2697d1!important;
+    padding:20px;
+}
+.submit{
+    background-color :#219f45;
+    padding : 13px 25px;
+    color: white;
+    border: #219f45;
+    font-size: 16px;
+    margin-bottom: 50px;
+}

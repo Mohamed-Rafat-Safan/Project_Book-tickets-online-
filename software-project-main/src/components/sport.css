@@ -1,0 +1,237 @@
+Start Glopel Rules
+/*Start Variable*/
+
+:root{
+    --maintranstion:0.3s;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+
+}
+
+.parent{
+    background-color: black;
+}
+.container-sport{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Small*/
+@media screen and (min-width:768px) {
+    .container-sport {
+        width: 750px;         
+    }
+}
+/*Medium*/
+@media screen and (min-width:992px) {
+    .container-sport {
+        width: 970px;
+    }
+}
+/*Larg*/
+@media(min-width:1170px) {
+    .container-sport {
+        width: 1170px;
+    }
+}
+/*End Glopel Rules*/
+/*Start Header*/
+.Header{
+    background-color: #219f45;
+    width: 100%;
+    height: 100px;
+}
+/*End Header*/
+/*Start Slideshow*/
+.slideShow{
+    background-image: url('playground3.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.slideShow .para{
+    min-height: 30%;
+    max-height: 35%;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 2px solid white;
+
+}
+.slideShow .para p{
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    padding: 30px;
+
+}
+.slideShow .para p span{
+    display: block;
+}
+.slideShow .para p .sp1{
+    font: 38px;
+    color: #2697d1;
+}
+.slideShow .para p .sp2{
+    font-size: 40px;
+}
+.slideShow .para p .sp3{
+    color: #23e95b;
+    font-size: 45px;
+}
+/*End Slideshow*/
+
+/*Start content*/
+ .chooseOptions .container-sport{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(50px,60px)) ;
+    gap: 70px ;
+
+}
+ .chooseOptions .container-sport div label{
+    display: block;
+}
+.chooseOptions .container-sport  div select {
+    height: 40px;
+    margin-top: 5px;
+    width: 100%;
+}
+ .chooseOptions  .container-sport div button{
+    height: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #2697d1;
+    border: #2697d1;
+    color: white;
+}
+ .chooseOptions  .container-sport div button:hover{
+    transform:scale(1.05);
+    background-color: #219f45;
+    border: solid 2px #219f45;
+    cursor: pointer;
+    color: white;
+}
+.search{
+    color:#2697d1;
+}
+/*End content*/
+.matches .container-sport{
+    display: grid;
+    grid-template-columns: repeat(auto,minmax(auto,1fr));
+   
+}
+.matches .container-sport  h1 {
+    display: block;
+    margin: 8% auto 5% auto;
+    border: solid 2px #219f45;
+    padding: 10px 20px;
+    background-color:white;
+    font-size: 30px;
+    width: fit-content;
+    z-index: 1;
+    transition: transform var(--maintranstion),background-color var(--maintranstion);
+}
+.matches .container-sport  h1:hover{
+    transform:scale(1.05);
+    background-color: #2697d1;
+    border: solid 2px #2697d1;
+    cursor: pointer;
+    color: white;
+}
+.matches .container-sport  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(540px,550px));
+    justify-content: center;
+    align-items: center;
+    gap: 100px 40px;
+    padding-top: 2%;
+    overflow: hidden;
+}
+ .matches .container-sport .boxes .box {
+    background-color: #eee;
+    text-align: center;
+    box-shadow: 0 2px 15px rgb(0 0 0/20%);
+    border-radius: 6px;
+    transition: transform var(--maintranstion) , box-shadow var(--maintranstion);
+}
+.matches .container-sport  .boxes .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0/60%);
+}
+ .matches .container-sport .boxes .box img{
+    max-width: 100%;
+    height: 250px;
+}
+.matches .container-sport  .boxes .box button{
+    height: 40px;
+    cursor: pointer;
+    width: 50%;
+    background-color: #2697d1;
+    color: white;
+    margin: 20px;
+    border: 2px solid #2697d1;
+    transition: transform var(--maintranstion),background-color var(--maintranstion);
+}
+ .matches .container-sport .boxes .box button:hover{
+    transform: scale(1.05);
+    background-color: #219f45;
+    border: 2px solid #219f45;
+}
+ .matches .container-sport.boxes .box .para{
+    display: inline-block;
+}
+ .matches .container-sport .boxes .box .paraDate p{
+    display: inline-block;
+    margin-left: 5px;
+}
+i{
+    color: #2697d1;
+}
+ .matches .container-sport .boxes .box h2 span{
+    font-size: 35px;
+    color: red;
+}
+ .matches  .ViewMore .container-sport{
+     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .matches .ViewMore .container-sport  h2 {
+    display: block;
+    border: solid 2px #219f45;
+    padding: 10px 20px;
+    background-color:white;
+    width: fit-content;
+    z-index: 1;
+    transition: transform var(--maintranstion),background-color var(--maintranstion);
+}
+ .matches .ViewMore .container-sport  h2:hover{
+    transform:scale(1.05);
+    background-color: #2697d1;
+    border: solid 2px #2697d1;
+    cursor: pointer;
+    color: white;
+}
+.footers{
+    background-color:rgb(39, 39, 39)
+}
